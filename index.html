@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1 class="main_heading">Registration Form</h1>
+        <hr />
+        <h2>User Information</h2>
+        <p>
+          Name:*
+          <input
+            type="text"
+            class="inputtext"
+            name="name"
+            required
+            placeholder="Badal Singh"
+          />
+        </p>
+        <fieldset class="field">
+          <legend>Gender</legend>
+          <p>
+            Male*
+            <input type="radio" name="gender" id="male" required /> Female*
+            <input type="radio" name="gender" id="female" required />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea
+            name="address"
+            id="address"
+            cols="100"
+            rows="6"
+            placeholder="Enter Your Address.."
+          ></textarea>
+        </p>
+        <p>
+          Email:*
+          <input
+            type="email"
+            class="inputtext"
+            name="email"
+            id="email"
+            required
+            placeholder="example@gmail.com"
+          />
+        </p>
+        <p>
+          Pincode:
+          <input
+            type="number"
+            class="inputtext"
+            name="pincode"
+            id="pincode"
+            placeholder="123456"
+          />
+        </p>
+        <button class="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
